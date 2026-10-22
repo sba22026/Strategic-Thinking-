@@ -83,5 +83,4 @@ The project proposal has been prepared. Data preparation, analysis, modelling, a
 ## Author
 
 GitHub: **sba22026**
-
-Data Analytics – Capstone Project
+ Capstone Project
