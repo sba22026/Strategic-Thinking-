@@ -80,6 +80,20 @@ The proposal contains the project background, problem definition, objectives, sc
 
 The project proposal has been prepared. Data preparation, analysis, modelling, and evaluation will be developed during the next stages of the capstone project.
 
+Next Steps:
+
+Review the suitability of the proposed Airbnb dataset for forecasting tourist arrivals.
+
+Identify additional tourism arrival data if required.
+
+Begin data collection and preparation.
+
+Set up the Python analysis environment.
+
+Project Updates
+
+Further progress, including data preparation, exploratory analysis, predictive modelling, and evaluation, will be documented as the project develops.
+
 ## Author
 
 GitHub: **sba22026**
