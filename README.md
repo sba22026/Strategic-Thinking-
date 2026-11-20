@@ -1,86 +1,167 @@
 # Forecasting Tourist Arrivals in New York City Using Time-Series Predictive Analytics
 
+# NYC Tourism Capstone: Airbnb Data Analysis
+
 ## Project Overview
 
-This capstone project aims to analyse historical tourism patterns in New York City and develop a time-series forecasting model to predict future tourism demand.
+This project forms part of CA2 Strategic Thinking and continues the
+capstone proposal, “Forecasting Tourist Arrivals in New York City
+Using Time-Series Predictive Analytics.”
 
-The purpose is to support better decision-making in tourism planning, accommodation, transport, staffing, and resource allocation.
-
-## Problem Statement
-
-Tourism demand in New York City changes throughout the year due to seasonal trends and fluctuations in visitor numbers.
-
-These changes make it difficult for tourism businesses to plan resources effectively.
-
-This project explores how historical data and predictive analytics can help identify patterns and improve future tourism demand forecasting.
-
-## Project Objectives
-
-- Collect, clean, and prepare historical tourism-related data.
-- Identify trends, seasonal patterns, and variations through exploratory data analysis.
-- Develop a time-series forecasting model.
-- Compare forecasting performance against a baseline model.
-- Evaluate model accuracy using appropriate statistical measures.
-- Provide recommendations to support tourism planning and resource allocation.
+The current stage focuses on Airbnb data preparation, exploratory
+analysis, and statistical testing.
 
 ## Dataset
 
-The project proposes using the **New York City Airbnb Open Data** dataset available on Kaggle.
+- File: `AB_NYC_2019.csv`
+- Source: Kaggle — New York City Airbnb Open Data
+- Original data: 48,895 listings and 16 columns
+- Coverage: Five NYC boroughs and 221 neighbourhoods
+- Cleaned data: 48,895 rows and 22 columns
 
-The dataset includes information such as:
-- Neighbourhood and room type
-- Accommodation prices
-- Minimum nights
-- Number of reviews
-- Reviews per month
-- Accommodation availability
+## Tools
 
-These variables will be explored to understand accommodation patterns and their potential relationship with tourism demand.
+Python, Google Colab, Pandas, NumPy, Matplotlib, Seaborn, SciPy,
+and GitHub.
 
-## Tools and Technologies
+## Work Completed
 
-- **Python** – Data analysis and predictive modelling
-- **Pandas and NumPy** – Data preparation and manipulation
-- **Matplotlib and Seaborn** – Data visualisation
-- **Scikit-learn** – Supporting analytical and evaluation tasks
-- **Jupyter Notebook / Google Colab** – Development environment
-- **GitHub** – Project documentation and version control
+- Inspected missing values, duplicates, and unusual records.
+- Filled 10,052 missing review rates for zero-review listings.
+- Excluded 11 zero-price listings from price-specific analysis.
+- Created six analytical features.
+- Produced descriptive statistics and three charts.
+- Performed Kruskal–Wallis and Spearman tests.
+- Exported the cleaned dataset and supporting results.
 
-## Methodology
+## Key Findings
 
-The project will follow five main stages:
+- Manhattan has the highest median listed price: $150.
+- Entire homes/apartments have a median listed price of $160.
+- Price distributions differ across room types (p < 0.001).
+- Price and review rate have a negligible negative association
+  among reviewed listings (Spearman correlation = −0.0185).
 
-1. **Data Preparation:** Clean the dataset, handle missing values and duplicates, and prepare the data for analysis.
-2. **Exploratory Data Analysis:** Identify trends, seasonal patterns, and variations.
-3. **Baseline Forecasting:** Develop a simple forecasting method, such as Naïve Forecasting or Moving Average.
-4. **Predictive Modelling:** Develop an appropriate time-series model, such as ARIMA.
-5. **Model Evaluation:** Evaluate forecasting performance using MAE, RMSE, and MAPE where appropriate.
+Price comparisons exclude zero-price listings.
 
-## Expected Outcomes
+## Main Files
 
-The project aims to produce:
+| File | Description |
+|---|---|
+| `Capstone Project Proposal.docx` | Original proposal |
+| `NYC_Airbnb_CA2.ipynb` | Analysis notebook |
+| `AB_NYC_2019.csv` | Original dataset |
+| `AB_NYC_2019_cleaned.csv` | Cleaned dataset |
+| `requirements.txt` | Package versions |
+| `README.md` | Project documentation |
 
-- A cleaned and prepared dataset
-- Exploratory data analysis and visualisations
-- A baseline forecasting model
-- A time-series predictive model
-- Model evaluation results
-- Future tourism demand forecasts
-- Recommendations for tourism planning and resource allocation
+## How to Run
 
-## Project Documentation
+1. Open `NYC_Airbnb_CA2.ipynb` in Google Colab.
+2. Run the cells in order.
+3. Upload `AB_NYC_2019.csv` when prompted.
+4. Review the outputs and validation results.
+5. Download the notebook and files from `/content/ca2_outputs/`.
 
-**Capstone Project Proposal.docx**
+## Limitations
 
-The proposal contains the project background, problem definition, objectives, scope, methodology, data sources, expected deliverables, project timeline, and ethical considerations.
+The dataset contains accommodation listings, not historical tourist
+arrival counts. Reviews do not represent bookings, and availability
+does not establish occupancy.
+
+Tourist-arrival forecasting requires additional time-series data.
+No forecasting model has been implemented at this stage.
 
 ## Project Status
 
-**Planning and Proposal Stage**
-
-The project proposal has been prepared. Data preparation, analysis, modelling, and evaluation will be developed during the next stages of the capstone project.
+Core cleaning and statistical analysis are implemented and reviewed.
+Written interpretation, project-planning documentation, the final
+report, AI-use declaration, and GitHub history checks remain.
 
 ## Author
 
 GitHub: **sba22026**
- Capstone Project
+
+Repository: https://github.com/sba22026/Strategic-Thinking-# NYC Tourism Capstone: Airbnb Data Analysis
+
+## Project Overview
+
+This project forms part of CA2 Strategic Thinking and continues the
+capstone proposal, “Forecasting Tourist Arrivals in New York City
+Using Time-Series Predictive Analytics.”
+
+The current stage focuses on Airbnb data preparation, exploratory
+analysis, and statistical testing.
+
+## Dataset
+
+- File: `AB_NYC_2019.csv`
+- Source: Kaggle — New York City Airbnb Open Data
+- Original data: 48,895 listings and 16 columns
+- Coverage: Five NYC boroughs and 221 neighbourhoods
+- Cleaned data: 48,895 rows and 22 columns
+
+## Tools
+
+Python, Google Colab, Pandas, NumPy, Matplotlib, Seaborn, SciPy,
+and GitHub.
+
+## Work Completed
+
+- Inspected missing values, duplicates, and unusual records.
+- Filled 10,052 missing review rates for zero-review listings.
+- Excluded 11 zero-price listings from price-specific analysis.
+- Created six analytical features.
+- Produced descriptive statistics and three charts.
+- Performed Kruskal–Wallis and Spearman tests.
+- Exported the cleaned dataset and supporting results.
+
+## Key Findings
+
+- Manhattan has the highest median listed price: $150.
+- Entire homes/apartments have a median listed price of $160.
+- Price distributions differ across room types (p < 0.001).
+- Price and review rate have a negligible negative association
+  among reviewed listings (Spearman correlation = −0.0185).
+
+Price comparisons exclude zero-price listings.
+
+## Main Files
+
+| File | Description |
+|---|---|
+| `Capstone Project Proposal.docx` | Original proposal |
+| `NYC_Airbnb_CA2.ipynb` | Analysis notebook |
+| `AB_NYC_2019.csv` | Original dataset |
+| `AB_NYC_2019_cleaned.csv` | Cleaned dataset |
+| `requirements.txt` | Package versions |
+| `README.md` | Project documentation |
+
+## How to Run
+
+1. Open `NYC_Airbnb_CA2.ipynb` in Google Colab.
+2. Run the cells in order.
+3. Upload `AB_NYC_2019.csv` when prompted.
+4. Review the outputs and validation results.
+5. Download the notebook and files from `/content/ca2_outputs/`.
+
+## Limitations
+
+The dataset contains accommodation listings, not historical tourist
+arrival counts. Reviews do not represent bookings, and availability
+does not establish occupancy.
+
+Tourist-arrival forecasting requires additional time-series data.
+No forecasting model has been implemented at this stage.
+
+## Project Status
+
+Core cleaning and statistical analysis are implemented and reviewed.
+Written interpretation, project-planning documentation, the final
+report, AI-use declaration, and GitHub history checks remain.
+
+## Author
+
+GitHub: **sba22026**
+
+Repository: https://github.com/sba22026/Strategic-Thinking-
